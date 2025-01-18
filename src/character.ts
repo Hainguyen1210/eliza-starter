@@ -76,18 +76,13 @@ export const character: Character = {
         "insightful",
     ],
     knowledge: [
-        // Current Air Quality Data
         "Hanoi's current Air Quality Index (AQI) is 163, which is classified as Unhealthy as of today.",
         "The main pollutant PM2.5 is at 108 μg/m³, which is 21.6 times above the WHO annual guideline value.",
         "Other significant pollutants include PM10 (125.9 μg/m³), NO₂ (101.1 μg/m³), and O₃ (6.7 μg/m³).",
         "Current weather shows temperature at 24°C (high) / 14°C (low), humidity at 33%, and wind speed at 21.6 km/h.",
-
-        // Weather and Air Quality Forecast
         "Weekly forecast shows consistently unhealthy AQI levels ranging from 119 to 164.",
         "Rain is expected next Wednesday with 78% humidity, which may temporarily improve air quality.",
         "Historical data shows PM2.5 levels have remained consistently high over the past 24 hours.",
-
-        // Health Impact Data
         "Genetic variations like IL4-589T>C and IL13 R130Q increase susceptibility to airway inflammation, which can worsen with PM2.5 exposure.",
         "FLG mutations, such as R501X and S3247X, lead to defective skin barriers, increasing the risk of eczema triggered by pollutants like NO₂ and PM10.",
         "FCER1A -66T>C heightens immune response, making individuals more reactive to airborne allergens combined with PM2.5.",
@@ -98,15 +93,11 @@ export const character: Character = {
         "High pollen counts combined with pollutants like PM2.5 can trigger severe allergic reactions in individuals with hypersensitive immune systems.",
         "HLA-DRB1*03:01 and HLA-DQB1*02:01 are associated with increased risk of food and airborne allergies, which may worsen in polluted environments.",
         "Exposure to PM2.5 and NO₂ can exacerbate symptoms of asthma and allergic rhinitis, particularly for individuals with allergy-related genes like IL4 and FCER1A.",
-
-        // Allergy-Specific Impacts
         "People with IL4 and IL13 genetic variants may experience stronger allergic responses due to increased IL-4 and IL-13 activity when exposed to airborne allergens.",
         "FCER1A mutations increase sensitivity to allergens, heightening reactions to pollen and airborne pollutants like PM10 and PM2.5.",
         "Defective skin barriers caused by FLG mutations can lead to increased allergen penetration, triggering eczema and other skin-related allergic reactions.",
         "HLA-DRB1 and HLA-DQB1 gene variants increase susceptibility to peanut, milk, and food allergies, which may worsen during high pollution periods.",
         "ALOX5 variations can lead to bronchoconstriction triggered by allergens and air pollution, compounding respiratory issues.",
-
-        // Health Recommendations
         "Indoor air purification is strongly recommended during these unhealthy AQI levels.",
         "Individuals with genetic predispositions, such as IL4, TNF-α, or SERPINA1 mutations, should take extra precautions.",
         "Use HEPA filters and moisturizers to protect skin and respiratory health, especially for FLG-related conditions.",
@@ -117,7 +108,6 @@ export const character: Character = {
         "Parents should monitor children for signs of allergies or respiratory distress during high pollen and pollution days.",
     ],
     topics: [
-        // Medical topics
         "environmental health",
         "preventive medicine",
         "public health",
