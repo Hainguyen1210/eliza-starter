@@ -77,15 +77,33 @@ export const character: Character = {
         "Historical data shows PM2.5 levels have remained consistently high over the past 24 hours.",
 
         // Health Impact Data
-        "Genetic factors like SERPINA1 mutations can increase susceptibility to air pollution effects.",
-        "People with ZZ genotype of SERPINA1 have 4.8 times higher risk of developing respiratory issues in polluted environments.",
-        "CHRNA3 and CHRNA5 genetic variations, combined with air pollution exposure, can increase respiratory health risks.",
+        "Genetic variations like IL4-589T>C and IL13 R130Q increase susceptibility to airway inflammation, which can worsen with PM2.5 exposure.",
+        "FLG mutations, such as R501X and S3247X, lead to defective skin barriers, increasing the risk of eczema triggered by pollutants like NO₂ and PM10.",
+        "FCER1A -66T>C heightens immune response, making individuals more reactive to airborne allergens combined with PM2.5.",
+        "SERPINA1 mutations, particularly the ZZ genotype, increase respiratory risk by 4.8 times when exposed to high air pollution.",
+        "CHRNA3 and CHRNA5 genetic variations combined with air pollution exposure amplify respiratory health risks.",
+        "TNF-α -308G>A elevates inflammation and airway sensitivity, further exacerbated by prolonged AQI levels above 150.",
+        "ALOX5 promoter (5-LO) increases leukotriene synthesis, leading to bronchoconstriction in polluted environments.",
+        "High pollen counts combined with pollutants like PM2.5 can trigger severe allergic reactions in individuals with hypersensitive immune systems.",
+        "HLA-DRB1*03:01 and HLA-DQB1*02:01 are associated with increased risk of food and airborne allergies, which may worsen in polluted environments.",
+        "Exposure to PM2.5 and NO₂ can exacerbate symptoms of asthma and allergic rhinitis, particularly for individuals with allergy-related genes like IL4 and FCER1A.",
+
+        // Allergy-Specific Impacts
+        "People with IL4 and IL13 genetic variants may experience stronger allergic responses due to increased IL-4 and IL-13 activity when exposed to airborne allergens.",
+        "FCER1A mutations increase sensitivity to allergens, heightening reactions to pollen and airborne pollutants like PM10 and PM2.5.",
+        "Defective skin barriers caused by FLG mutations can lead to increased allergen penetration, triggering eczema and other skin-related allergic reactions.",
+        "HLA-DRB1 and HLA-DQB1 gene variants increase susceptibility to peanut, milk, and food allergies, which may worsen during high pollution periods.",
+        "ALOX5 variations can lead to bronchoconstriction triggered by allergens and air pollution, compounding respiratory issues.",
 
         // Health Recommendations
         "Indoor air purification is strongly recommended during these unhealthy AQI levels.",
-        "People with genetic predispositions to respiratory conditions should take extra precautions.",
-        "Regular monitoring of personal symptoms and air quality is advised.",
-        "Outdoor activities should be limited, especially during peak pollution hours.",
+        "Individuals with genetic predispositions, such as IL4, TNF-α, or SERPINA1 mutations, should take extra precautions.",
+        "Use HEPA filters and moisturizers to protect skin and respiratory health, especially for FLG-related conditions.",
+        "Limit outdoor activities during peak pollution hours and wear N95 masks if necessary.",
+        "Regular monitoring of personal symptoms, environmental changes, and air quality is advised.",
+        "Hydration and anti-inflammatory diets can help mitigate oxidative stress from pollutant exposure.",
+        "Antihistamines and allergy medications may help manage symptoms for individuals with heightened sensitivity to allergens.",
+        "Parents should monitor children for signs of allergies or respiratory distress during high pollen and pollution days.",
     ],
     topics: [
         // Medical topics
