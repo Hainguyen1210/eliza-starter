@@ -1,0 +1,60 @@
+Weather Quality Summary for Hanoi (ID: ZPGtcusBx9JWBKYxm)
+
+Current Air Pollutants:
+PM2.5: 108 μg/m³ (Particulate matter under 2.5 microns)
+PM10: 125.9 μg/m³ (Particulate matter under 10 microns)
+O₃: 6.7 μg/m³ (Ozone)
+NO₂: 101.1 μg/m³ (Nitrogen dioxide)
+
+Note: PM2.5 concentration is currently 21.6 times above the WHO annual guideline value.
+
+Daily Forecast:
+Day     AQI    High/Low    Wind         Humidity    Conditions
+Today   163    24°/14°     21.6 km/h    33%         Sunny
+Sat     151    20°/13°     10.8 km/h    54%         Cloudy
+Sun     164    24°/13°     14.4 km/h    42%         Cloudy
+Mon     156    25°/15°     18.0 km/h    46%         Sunny
+Tue     129    26°/16°     18.0 km/h    38%         Sunny
+Wed     132    21°/18°     10.8 km/h    78%         Rain (100%)
+Thu     119    22°/18°     7.2 km/h     62%         Cloudy
+Fri     137    26°/19°     18.0 km/h    41%         Cloudy
+
+Historical Hourly Measurements (Jan 16-17, 2025):
+
+Jan 16, 00:00 - AQI: 177, PM2.5: 92 μg/m³, PM10: 141.4 μg/m³, O3: 2.7 ppb, NO2: 99.7 ppb
+Jan 16, 01:00 - AQI: 177, PM2.5: 92 μg/m³, PM10: 140.3 μg/m³, O3: 2.4 ppb, NO2: 100.4 ppb
+Jan 16, 02:00 - AQI: 168, PM2.5: 79.7 μg/m³, PM10: 151.6 μg/m³, O3: 2.1 ppb, NO2: 102.4 ppb
+Jan 16, 03:00 - AQI: 164, PM2.5: 74 μg/m³, PM10: 139.3 μg/m³, O3: 4.3 ppb, NO2: 101.6 ppb
+Jan 16, 04:00 - AQI: 162, PM2.5: 71 μg/m³, PM10: 128.4 μg/m³, O3: 7.5 ppb, NO2: 99.5 ppb
+Jan 16, 05:00 - AQI: 161, PM2.5: 69.5 μg/m³, PM10: 117.8 μg/m³, O3: 10.3 ppb, NO2: 99.3 ppb
+Jan 16, 06:00 - AQI: 159, PM2.5: 67 μg/m³, PM10: 111.2 μg/m³, O3: 17 ppb, NO2: 98.9 ppb
+Jan 16, 07:00 - AQI: 157, PM2.5: 64.2 μg/m³, PM10: 106.1 μg/m³, O3: 14.1 ppb, NO2: 97.4 ppb
+Jan 16, 08:00 - AQI: 157, PM2.5: 64 μg/m³, PM10: 103.9 μg/m³, O3: 21.7 ppb, NO2: 96.8 ppb
+
+Hourly Forecast (Next 24 Hours):
+Time    AQI    Temp    Wind     Humidity    Conditions
+18:00   168    22°C    7.2km/h    45%      Cloudy
+19:00   168    21°C    3.6km/h    50%      Cloudy
+20:00   168    20°C    10.8km/h   55%      Partly Cloudy
+21:00   168    19°C    14.4km/h   61%      Partly Cloudy
+22:00   168    18°C    10.8km/h   66%      Partly Cloudy
+23:00   168    18°C    10.8km/h   70%      Partly Cloudy
+00:00   168    17°C    7.2km/h    73%      Partly Cloudy
+01:00   168    17°C    7.2km/h    76%      Partly Cloudy
+02:00   168    16°C    7.2km/h    79%      Partly Cloudy
+03:00   168    16°C    7.2km/h    81%      Partly Cloudy
+04:00   168    16°C    3.6km/h    84%      Partly Cloudy
+05:00   168    15°C    3.6km/h    85%      Partly Cloudy
+06:00   168    15°C    3.6km/h    86%      Partly Cloudy
+07:00   181    15°C    3.6km/h    84%      Sunny
+08:00   181    17°C    3.6km/h    75%      Sunny
+09:00   181    19°C    0km/h      66%      Sunny
+10:00   181    21°C    0km/h      58%      Sunny
+11:00   181    22°C    0km/h      50%      Sunny
+12:00   181    24°C    3.6km/h    46%      Sunny
+
+Weather Conditions Range:
+- Temperature: 13-26°C
+- Wind Speed: 0-21.6 km/h
+- Humidity: 33-86%
+- Pressure: 1018-1028 hPa

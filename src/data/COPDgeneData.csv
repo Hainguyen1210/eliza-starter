@@ -1,0 +1,22 @@
+,Tên gen,Kiểu gen,Nguy cơ sức khỏe,Hệ số tác động (OR),Mô tả nguy cơ ảnh hưởng đến sức khỏe lâm sàng,Nguy cơ bệnh lý
+1,SERPINA1,MM,Low risk,1,"Normal, no risk of alpha-1-antitrypsin deficiency.",No special risk.
+1,SERPINA1,MZ,Moderate risk,2,"Mild alpha-1-antitrypsin deficiency, lung damage if exposed to smoke.",Increased risk of mild COPD.
+1,SERPINA1,ZZ,High risk,4.8,"Severe alpha-1-antitrypsin deficiency, lung tissue destruction.",High risk of COPD and pneumonia.
+2,CHRNA3,CC,Low risk,1,"Normal response to nicotine, low risk of COPD.",No special risk.
+2,CHRNA3,CT,Moderate risk,1.3,"Higher response to nicotine, more likely to smoke heavily.",Increased risk of COPD and lung damage.
+2,CHRNA3,TT,High risk,1.8,"Easy to get addicted to nicotine, heavy smoking leads to lung damage.",High risk of COPD and lung cancer.
+3,CHRNA5,GG,Low risk,1,"No mutation, normal lung function.",No special risk.
+3,CHRNA5,AG,Moderate risk,1.5,"Affected by nicotine, mild lung damage.",Moderate risk of COPD.
+3,CHRNA5,AA,High risk,2,"Increased response to nicotine, lung tissue damage.",High risk of COPD and lung cancer.
+4,FAM13A,TT,Low risk,1,"Normal, no risk of lung tissue damage.",No special risk.
+4,FAM13A,CT,Moderate risk,1.4,"Affects lung structure and regeneration.",Moderate risk of COPD.
+4,FAM13A,CC,High risk,1.7,"Reduces lung regeneration, increases inflammation.",High risk of COPD.
+5,HHIP,TT,Low risk,1,No effect on lung regeneration.,No special risk.
+5,HHIP,CT,Moderate risk,1.2,Partially weakens lung regeneration.,Moderate risk of COPD.
+5,HHIP,CC,High risk,1.5,Increases risk of airway damage and lung tissue damage.,High risk of COPD.
+6,GSTP1,AA,Low risk,1,Normal antioxidant ability.,No special risk.
+6,GSTP1,AG,Moderate risk,1.3,"Weakened antioxidant ability, increased sensitivity to oxidative stress.",Moderate risk of COPD.
+6,GSTP1,GG,High risk,1.6,"Severe oxidative stress, easy lung tissue damage.",High risk of COPD.
+7,IL6,CC,Low risk,1,"Normal inflammation, no special risk.",No special risk.
+7,IL6,CG,Moderate risk,1.4,"Mild inflammation, slight lung damage.",Moderate risk of COPD.
+7,IL6,GG,High risk,1.9,"Chronic inflammation, increased lung tissue damage.",High risk of COPD.

@@ -1,0 +1,85 @@
+Reference,Study*,Sample size (cases/controls),Disease/trait,Platform (# SNPs),Region (size),Gene,Key SNPs
+Pillai et al15,Norway,823/810,COPD,Illumina (Human Hap550),15q25,CHRNA3,rs8034191
+,ICGN,1891,,,CHRNA5,rs1051730,
+,NETT-NAS,389/472,,,,,
+,EOCOPD,949,,,,,
+,,,,,4q31,HHIP,rs1828591
+,,,,,,,rs13118928
+Cho et al19,Norway,2940/1380,COPD,Illumina (Human Hap550 or Quad610),4q22,FAM13A,rs7671167
+,NETT-NAS,,,,,rs1903003,
+,ECLIPSE,,,,,,
+,COPDGene,502/504,,,,,
+,EOCOPD,949,,,,,
+,ICGN,2859,,,,,
+,,,,,15q25,CHRNA3,rs1062980
+,,,,,,CHRNA5,
+,,,,,,IREB2,
+,,,,,4q31,HHIP,rs1828591
+Cho et al20,ECLIPSE,1764/178,COPD,"Illumina (Human Hap550, Quad610, or Omni1 Quad)",19q13,RAB4B,rs7937
+,NAS-NETT,373/435,,,EGLN2,rs2604894,
+,GenKOLS,863/808,,,MIA,,
+,COPDGene,499/501,,,CYP2A6,,
+,ICGN,983 probands/ 1876 siblings,,,,,
+,,,,,4q22,FAM13A,rs1964516
+,,,,,,,rs7671167
+,,,,,4q31,HHIP,rs13141641
+,,,,,,,rs13118928
+,,,,,15q25,CHRNA3,rs11858836
+,,,,,,CHRNA5,rs13180
+,,,,,,IREB2,
+Wilk et al37,FHS,1059â€“1222,Ten spirometry phenotypes,"Affymetrix (70,987)",10q25,GSTO2,rs156697
+Wilk et al38,FHS,7691,FEV1/FVC,Affymetrix (500 K + 50 K),4q31,HHIP,rs13147758
+,Family heart study,835,,,,,
+Repapi et al40,SpiroMeta Consortium,"20,288",FEV1 and FEV1/FVC,Affymetrix and Illumina (2.5 million),4q31,HHIP,rs12504628
+,CHARGE consortium,"32,184",,,,,
+,,"21,209",,,,,
+,Health 2000 survey,883,,,,,
+,,,FEV1,,2q35,TNS1,rs2571445
+,,,,,4q24,GSTCD,rs10516526
+,,,,,5q33,HTR4,rs3995090
+,,,FEV1/FVC,,6p21,AGER,rs2070600
+,,,,,15q23,THSD4,rs12899618
+Hancock et al39,CHARGE Consortium,"20,890",FEV1/FVC,"Affymetrix and Illumina (2,515,866)",2q36,PID1,rs1435867
+,SpiroMeta consortium,"16,178",,,,,
+,,,,,4q22,FAM13A,rs2869967
+,,,,,4q31,HHIP,rs1980057
+,,,,,5q33,HTR4,rs11168048
+,,,,,5q33,ADAM19,rs2277027
+,,,,,6p21,AGER-PPT2,rs2070600
+,,,,,6q24,GPR126,rs3817928
+,,,,,9q22,PTCH1,rs16909898
+,,,FEV1,,4q24,INTS12,rs17331332
+,,,,,,GSTCD,
+,,,,,,NPNT,
+"Soler Artigas et al41,**",23 studies,"48,201",FEV1,"Illumina and Affymetrix (2,706,349)",3q26,MECOM,rs134555
+17 studies,"46,411",,,,,,
+,,,,,6p22,ZKSCAN3,rs6903823
+,,,,,10q22,C10orf11,rs11001819
+,,,FEV1/FVC,,1p36,MFAP2,rs2284746
+,,,,,1q41,TGFB2- LYPLAL1,rs993925
+,,,,,2q37,HDAC4- FLJ43879,rs12477314
+,,,,,3p24,RARB,rs1529672
+,,,,,5q15,SPATA9- RHOBTB3,rs153916
+,,,,,6q21,ARMC2,rs2798641
+,,,,,6p21,NCR3-AIF1,rs2857595
+,,,,,12q13,LRP1,rs11172113
+,,,,,12q22,CCDC38,rs1036429
+,,,,,16q13,MMP15,rs12447804
+,,,,,16q23,CFDP1,rs2865531
+,,,,,21q22,KCNE2- LINC00310,rs9978142
+,,,FEV1 and FEV1/FVC,,10p23,CDC123,rs7068966
+Imboden et al42,SAPALDIA,"2677 nonasthmatic, 1441 asthmatic",FEV1 decline in nonasthmatic,Illumina,13q14,DLEU7,rs9316500
+,ECRHS,Human,,,,,
+,EGEA,,,610quad,,,
+,FHS,"10,858 nonasthmatic, 1138 asthmatic",,,,,
+,ARIC,,,,,,
+,B58C,,,,,,
+,Dutch asthma study,,,,,,
+,,,FEV1/FVC decline in asthmatic,,8p22,TUSC3,rs4831760
+Kong et al43,ECLIPSE,1557,Emphysema (qualitative),Illumina,12q11,BICD1,rs10844154
+,Norway,432,Human,,,rs161976,
+,,,,"Hap550 (499,578)",,,
+Wan et al44,ECLIPSE,1734,Cachexia-related phenotypes (BMI and fat-free mass index),Illumina,16q12,FTO,rs8050136
+,Norway,851,,,,,
+,NETT,365,,,,,
+,COPDGene,502,,,,,

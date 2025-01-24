@@ -1,0 +1,82 @@
+1. Activate morning notification
+• Time: 7:00 AM
+• Notification content:
+" Weather today may affect your health! Air quality is poor and humidity is high, which can cause breathing difficulties, especially for people with respiratory problems.
+Click here to get advice from your AI Agent."
+ 
+2. User opens the notification → Interface to interact with AI Agent
+• AI Agent:
+"Good morning! I noticed today's weather is not favorable, with poor air quality. To help you protect your health, I need to know some basic information. Are you ready?"
+(Show "Start" or "Later" button)
+ 
+3. Collect user information
+• AI Agent:
+o "Do you have any of the following symptoms? (Select all applicable)"
+1. Cough or wheezing.
+2. Shortness of breath, especially when exercising.
+3. Chest tightness.
+4. No symptoms. (If selected, skip symptom questions)
+o If selected one or more symptoms:
+"How long have you had these symptoms?"
+▪ Options: <1 week / 1-4 weeks / >1 month / Don't remember
+o "Do you smoke or have you ever smoked?"
+▪ Options: Yes / No
+o "Do you have frequent exposure to pollution or dust (e.g., working outdoors, in a factory)?"
+▪ Options: Yes / No
+o "Have you ever had genetic testing related to respiratory diseases?"
+▪ Options: Yes / No
+ 
+4. Analyze data and provide initial recommendations
+• Based on user input, AI Agent provides personalized recommendations:
+Step 4.1: AI Agent identifies high-risk users
+• AI Agent:
+"I noticed you have symptoms or risk factors (e.g., chronic cough, shortness of breath when exercising, history of smoking or environmental exposure).
+To assess your risk more accurately, would you like to provide additional information about your genetic data?"
+(Show "Agree" or "Disagree" button)
+ 
+Step 4.2: User agrees to provide genetic information
+• AI Agent:
+"Thank you! I need to know more about your genetic test results:
+o Have you had a genetic test before? (Show "Yes" / "No" button)
+ 
+Step 4.3.1: Case where user has had a genetic test
+• AI Agent:
+"Do you have a test code or report from a previous genetic test?
+If so, please enter the code or upload the report so I can analyze it."
+(Show input field or "Upload report" button)
+o User uploads report:
+"I've received your data. Please wait for a moment while I analyze it."
+(AI Agent processes report, e.g., identifies variant rs8034191 in the CHRNA3 gene or other variants related to COPD).
+ 
+Step 4.3.2: Case where user has not had a genetic test
+• AI Agent:
+"No problem! You can take a genetic test to know more about your risk of respiratory diseases.
+Our genetic testing service can help you identify genetic variants that increase your risk of COPD.
+Would you like to learn more about this test?"
+(Show "Learn more" or "Close" button)
+o If user clicks "Learn more":
+"Our genetic test can help you:
+▪ Identify genetic variants like rs8034191 (CHRNA3) or rs1051730 (CHRNA5), related to COPD risk.
+▪ Provide personalized prevention and treatment recommendations.
+Please contact us to schedule a genetic test!"
+(Show "Contact" button)
+ 
+Step 4.4: Genetic test results
+• If user provides genetic data, AI Agent provides the test results:
+"I've analyzed your genetic data and found:
+o Variant rs8034191 in the CHRNA3 gene: Increases COPD risk.
+o Effect size: High.
+Based on this, I recommend:
+3. Schedule an appointment with a respiratory specialist to assess your lung function and overall health.
+4. Avoid triggers like pollution, smoking, and environmental exposure.
+5. Maintain a healthy diet and lifestyle to support your respiratory health."
+(Show "Save results" or "Find a nearby doctor" button)
+ 
+Step 4.5: Ongoing support and monitoring
+• AI Agent:
+"Would you like me to continue monitoring your health and send you personalized reminders in the future?"
+(Show "Yes" / "No" button)
+o If selected "Yes":
+"I'll keep an eye on your health data and send you reminders when needed. Stay in touch to ensure you receive the best support!"
+o If selected "No":
+"No problem, I'm always here to help if you need it. Remember to take care of your health!"
