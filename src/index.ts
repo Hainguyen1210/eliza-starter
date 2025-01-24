@@ -1,4 +1,4 @@
-import { DirectClient } from "@elizaos/client-direct";
+import {DirectClient} from "@elizaos/client-direct";
 import {
   AgentRuntime,
   elizaLogger,
@@ -6,23 +6,23 @@ import {
   stringToUuid,
   type Character,
 } from "@elizaos/core";
-import { bootstrapPlugin } from "@elizaos/plugin-bootstrap";
-import { createNodePlugin } from "@elizaos/plugin-node";
-import { solanaPlugin } from "@elizaos/plugin-solana";
+import {bootstrapPlugin} from "@elizaos/plugin-bootstrap";
+import {createNodePlugin} from "@elizaos/plugin-node";
+import {solanaPlugin} from "@elizaos/plugin-solana";
 import fs from "fs";
 import net from "net";
 import path from "path";
-import { fileURLToPath } from "url";
-import { initializeDbCache } from "./cache/index.ts";
-import { character } from "./character.ts";
-import { startChat } from "./chat/index.ts";
-import { initializeClients } from "./clients/index.ts";
+import {fileURLToPath} from "url";
+import {initializeDbCache} from "./cache/index.ts";
+import {character} from "./character.ts";
+import {startChat} from "./chat/index.ts";
+import {initializeClients} from "./clients/index.ts";
 import {
   getTokenForProvider,
   loadCharacters,
   parseArguments,
 } from "./config/index.ts";
-import { initializeDatabase } from "./database/index.ts";
+import {initializeDatabase} from "./database/index.ts";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -39,7 +39,7 @@ export function createAgent(
   character: Character,
   db: any,
   cache: any,
-  token: string
+  token: string,
 ) {
   elizaLogger.success(
     elizaLogger.successesTitle,
@@ -77,20 +77,15 @@ async function startAgent(character: Character, directClient: DirectClient) {
     const dataDir = path.join(__dirname, "../data");
 
     if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
+      fs.mkdirSync(dataDir, {recursive: true});
     }
 
-    const db = initializeDatabase(dataDir);
-
-    await db.init();
-
+    const db = await initializeDatabase(dataDir);
     const cache = initializeDbCache(character, db);
     const runtime = createAgent(character, db, cache, token);
 
     await runtime.initialize();
-
     runtime.clients = await initializeClients(character, runtime);
-
     directClient.registerAgent(runtime);
 
     // report to console
@@ -99,10 +94,10 @@ async function startAgent(character: Character, directClient: DirectClient) {
     return runtime;
   } catch (error) {
     elizaLogger.error(
-      `Error starting agent for character ${character.name}:`,
-      error,
+      "Failed to start agent",
+      character.name,
+      error instanceof Error ? error.message : error,
     );
-    console.error(error);
     throw error;
   }
 }
@@ -139,36 +134,47 @@ const startAgents = async () => {
     characters = await loadCharacters(charactersArg);
   }
   console.log("characters", characters);
+
+  // Initialize agents first
+  const agents = [];
   try {
     for (const character of characters) {
-      await startAgent(character, directClient as DirectClient);
+      const agent = await startAgent(character, directClient as DirectClient);
+      agents.push(agent);
     }
   } catch (error) {
     elizaLogger.error("Error starting agents:", error);
+    throw error; // Re-throw to trigger proper cleanup
   }
 
+  // Start server only if agents initialized successfully
   while (!(await checkPortAvailable(serverPort))) {
     elizaLogger.warn(`Port ${serverPort} is in use, trying ${serverPort + 1}`);
     serverPort++;
   }
 
-  // upload some agent functionality into directClient
   directClient.startAgent = async (character: Character) => {
-    // wrap it so we don't have to inject directClient later
     return startAgent(character, directClient);
   };
 
-  directClient.start(serverPort);
+  try {
+    directClient.start(serverPort);
 
-  if (serverPort !== parseInt(settings.SERVER_PORT || "3000")) {
-    elizaLogger.log(`Server started on alternate port ${serverPort}`);
-  }
+    if (serverPort !== parseInt(settings.SERVER_PORT || "3000")) {
+      elizaLogger.log(`Server started on alternate port ${serverPort}`);
+    }
 
-  const isDaemonProcess = process.env.DAEMON_PROCESS === "true";
-  if(!isDaemonProcess) {
-    elizaLogger.log("Chat started. Type 'exit' to quit.");
-    const chat = startChat(characters);
-    chat();
+    // Only start chat interface if not running in Docker
+    const isDockerProcess = process.env.DOCKER_PROCESS === "true";
+    const isDaemonProcess = process.env.DAEMON_PROCESS === "true";
+    if (!isDaemonProcess && !isDockerProcess && agents.length > 0) {
+      elizaLogger.log("Chat started. Type 'exit' to quit.");
+      const chat = startChat(characters);
+      await chat(); // Wait for chat to initialize
+    }
+  } catch (error) {
+    elizaLogger.error("Error in server/chat initialization:", error);
+    throw error;
   }
 };
 

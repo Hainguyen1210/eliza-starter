@@ -2,24 +2,25 @@ import { settings } from "@elizaos/core";
 import readline from "readline";
 
 const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+      input: process.stdin,
+      output: process.stdout,
+    });
 
-rl.on("SIGINT", () => {
-  rl.close();
-  process.exit(0);
-});
+    rl.on("SIGINT", () => {
+  console.log("\nGracefully shutting down...");
+        rl.close();
+      process.exit(0);
+    });
 
-async function handleUserInput(input, agentId) {
+async function handleUserInput(input: string, agentId: string): Promise<void> {
   if (input.toLowerCase() === "exit") {
-    rl.close();
+    console.log("Exiting chat...");
+      rl.close();
     process.exit(0);
   }
 
   try {
     const serverPort = parseInt(settings.SERVER_PORT || "3000");
-
     const response = await fetch(
       `http://localhost:${serverPort}/${agentId}/message`,
       {
@@ -40,16 +41,29 @@ async function handleUserInput(input, agentId) {
   }
 }
 
-export function startChat(characters) {
-  function chat() {
+export function startChat(characters: any[]) {
+  return async function chat() {
     const agentId = characters[0].name ?? "Agent";
-    rl.question("You: ", async (input) => {
-      await handleUserInput(input, agentId);
-      if (input.toLowerCase() !== "exit") {
-        chat(); // Loop back to ask another question
-      }
+    
+    // Convert readline.question to a promise
+    const getInput = () => new Promise<string>((resolve) => {
+      rl.question("You: ", resolve);
     });
-  }
 
-  return chat;
+    try {
+      while (true) {
+        const input = await getInput();
+        if (input.toLowerCase() === "exit") {
+          console.log("Exiting chat...");
+            rl.close();
+          process.exit(0);
+        }
+        await handleUserInput(input, agentId);
+      }
+    } catch (error) {
+      console.error("Error in chat:", error);
+        rl.close();
+      throw error;
+    }
+  };
 }
