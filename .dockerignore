@@ -1,0 +1,36 @@
+# Version control
+.git
+.gitignore
+
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+dist
+build
+
+# Environment and local files
+.env
+.env.*
+*.log
+
+# Development files
+.vscode
+.idea
+*.md
+.editorconfig
+
+# Test files
+__tests__
+*.test.*
+*.spec.*
+
+# Docker files
+Dockerfile
+.dockerignore
+docker-compose*
+
+# OS files
+.DS_Store
+Thumbs.db
